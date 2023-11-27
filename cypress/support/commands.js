@@ -67,6 +67,7 @@ Cypress.Commands.add('createTodo', function (todo) {
   })
 
   // create the todo
+  //dummy comment
   cy.get('.new-todo', { log: false }).type(`${todo}{enter}`, { log: false })
 
   // now go find the actual todo
